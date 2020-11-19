@@ -57,7 +57,7 @@ main {
     text-align: center;
 }
 
-.thumnails figure [src="/images/1to50.jpg"] {
+.thumnails figure [src="./images/1to50__img"] {
     width: 500px;
     height: 700px;
     padding: 20px;
