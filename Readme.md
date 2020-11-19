@@ -1,4 +1,4 @@
-https://kyday.github.io/westudy/.
+https://kyday.github.io/westudy/index.html
 
 
 # Westudy 1주차 - 자기소개서
