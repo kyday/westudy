@@ -14,7 +14,7 @@ let startTime = null;
 
 const init = () => {
     startBtn.addEventListener("click", () => {
-        if (started) {
+        if (started) { 
             return false;
         } 
         start();
@@ -153,14 +153,18 @@ const getTime = () => {
 }
 
 const end = () => {
-    started = false;
+    started = true;
     clearInterval(timer);
     printTime("");
     alert("게임 클리어 , 기록 : " + getTime());
-    timer.style.display="none";
+    //timer.style.display="none";
+    location.reload();
 }
 
 
 window.onload = () => {
     init();
 }
+
+
+

@@ -6,12 +6,12 @@ body {
 }
 
 header {
-  padding: 50px 50px;
+  padding: 15px 50px;
   font-family: 'BenchNine', Arial, sans-serif;
 }
 
 header .game__nav {
-	padding: 50px 50px;
+	padding: 25px 50px;
 	
 }
 
@@ -94,9 +94,6 @@ header h1 {
 	color: #fff;
 }
 
-
-
-
 .container{
     width: 700px;
     margin: 0 auto;
@@ -149,4 +146,24 @@ header h1 {
 .end{
     transition: 1s;
     opacity: 0;
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+  .game__nav h1 {
+    font-size: 50px;
+  }
+
+  .game__nav p {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    
+  }
+
 }

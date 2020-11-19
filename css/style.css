@@ -79,9 +79,16 @@ main {
     }
 
     .thumnails img {
-        width: 100%; height: auto;
+        width: 100%;
+        height: 85%;
+
         padding-bottom: 15px;
         margin-bottom: 5px;
+    }
+
+    .thumnails figure [src="./images/1to50__img.jpg"] {
+        width: 90%;
+        height: 70%;
     }
 
     .thumnails figure {
