@@ -1,9 +1,8 @@
 https://kyday.github.io/westudy/.
 
 
-# Westudy 1주차 - 자기소개서
+# Westudy 1주차 - 자기소개서 페이지 만들기
 
-## HTML & CSS를 이용한 자기소개서 페이지 만들기
 - Semantic Tag 
 - Flexbox
 - transition
