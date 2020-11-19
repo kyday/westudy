@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+    
+    background-image: url("../images/photo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position : top center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    font-family: 'Lobster', cursive;
+}
+
+
+header p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 90px;
+}
+
+main {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.thumnails{
+    column-count: 2;
+    column-gap: 50px;
+    display: inline-flex;
+    padding: 10px 15px; 
+    justify-content: center;
+}
+
+.thumnails figure{
+    background:  rgb(235, 235, 230);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    display: inline-block;
+    border:1px solid rgba(0,0,0,0.5);
+    padding: 10px;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.thumnails figure figcaption{
+    border-top:1px solid rgba(0,0,0,0.5);
+    padding:15px;
+    margin-top:11px;
+    text-align: center;
+}
+
+.thumnails figure [src="/images/game.JPG"] {
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+}
+
+.thumnails:hover figure:not(:hover) {
+	opacity: 0.3;
+}
+
+@media screen and (max-width: 750px) {
+
+    header p {
+        font-size: 50px;
+    }
+
+    .thumnails{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .thumnails img {
+        width: 100%; height: auto;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+    }
+
+    .thumnails figure {
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        background-position-x: 0%;
+        padding: 10px;
+        margin: 15px;
+
+    }
+
+}
+
+
+

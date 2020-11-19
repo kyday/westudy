@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+body {
+	text-align: center;
+	
+}
+
+header {
+  padding: 50px 50px;
+  font-family: 'BenchNine', Arial, sans-serif;
+}
+
+header .game__nav {
+	padding: 50px 50px;
+	
+}
+
+header h1 {
+	font-size: 100px;
+	font-weight: bold;
+	padding: 15px;
+}
+
+
+
+
+/* Game button */
+.game__main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	border: 1px solid #999;
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.game__main .start-btn {
+  background-color: #0f75ebd0;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1em;
+  margin: auto 100%;
+  outline: none;
+  padding: 15px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+}
+.game__main .start-btn::before,
+.game__main .start-btn::after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.game__main .start-btn::before {
+  border-color: #fff;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -5px;
+  top: -5px;
+}
+.game__main .start-btn::after {
+  border-bottom-width: 2px;
+  border-color: #fff;
+  border-left-width: 2px;
+  bottom: -5px;
+  left: -5px;
+}
+.game__main .start-btn:hover,
+.game__main .start-btn.hover {
+  background-color: #0f75ebd0;
+}
+.game__main .start-btn:hover::before,
+.game__main .start-btn.hover::before,
+.game__main .start-btn:hover::after,
+.game__main .start-btn.hover::after {
+  height: 100%;
+  width: 100%;
+}
+
+#count {
+	color: #fff;
+}
+
+
+
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.container .time{
+  font-size: 50px;
+  margin-bottom: 90px;
+  font-style: italic;
+}
+
+#board{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.inner-block{
+    width: 90px;
+    height:90px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 90px;
+    color: white;
+    font-size: 26px;
+    background-color: #e7b262;
+}
+
+.type-2 .inner-block{
+    width: 90px;
+    height:90px;
+    background-color: #f3a108;
+}
+
+.type-2{
+    z-index: 1;
+}
+
+.type-1{
+    z-index: 2;
+}
+
+.end{
+    transition: 1s;
+    opacity: 0;
+}

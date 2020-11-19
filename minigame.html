@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1 to 50</title>
+
+    <meta name="author" content="KIYEOL">
+    <meta name="description" content="1 to 50 mini game">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" maximum-scale=1, minmum-scale=1>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> <!-- 순서 중요 -->
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="./js/game.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="game__nav">
+            <h1> 1 to 50</h1>
+            <p>1부터 50까지 순서대로 누르세요!</p>
+        </div>
+
+        <input type="button" value="New Game" onClick="window.location.reload()">
+        
+
+    </header>
+
+
+    <main class="container">
+        <div class="time"></div>
+        
+        <div class="game__main">
+            <button class="start-btn">Start Game</button>
+            <span id="board"></span>
+        </div>
+
+        
+
+    </main>
+    
+
+
+
+
+</body>
+</html>

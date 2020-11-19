@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
+/* header */
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    overflow-x: hidden
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    box-shadow: 0 0 5px rgba(0,0,0,.75);
+    padding: 30px 70px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.navbar .navbar__logo {
+    font-size: 2em;
+}
+
+.navbar .navbar__logo a {
+    font-size: 80px;
+    
+}
+
+.navbar .navbar__menu {
+    display: flex;
+    list-style: none;
+    font-size: 35px;
+    
+}
+
+.navbar .navbar__menu li {
+    padding: 30px 55px;
+    
+}
+
+.navbar .navbar__menu li:hover {
+    background-color: rgba(73, 71, 71, 0.15); 
+    border-radius: 20px;
+}
+
+.navbar .navbar__icons {
+    display: flex;
+    list-style: none;
+    font-size: 40px;
+}
+
+.navbar .navbar__icons li {
+    padding-left: 15px;
+
+ }
+
+ /* section 1 */
+
+.section__1 {
+    background-color: #000;
+    width: 100vw;
+}
+
+.section__1 .main__page {
+    padding: 400px 450px;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 300;
+    overflow: auto;
+
+}
+
+.section__1 .main__page span {
+    color: #fff;
+}
+
+.section__1 .underline {
+    background-repeat: no-repeat;
+    background-size: 0% 100%; 
+    transition: background-size 0.6s;
+    cursor: pointer;
+}
+
+.section__1 .underline.red {
+    background-image: linear-gradient(transparent 95%, #d41610 40%);
+}
+
+.section__1 .underline:hover {
+    background-size: 100% 100%;
+}
+
+.section__1 .main__page p {
+    font-size: 50px;
+    color: #fff;
+    padding-top: 70px;
+}
+
+
+ /* section 2 */
+.section__2 {
+    background: #fff;
+    width: 100vw;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+.section__2 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__2 .main__portfoilo {
+    background: #fff;
+    border-radius: 2px;
+    width: 500px;
+    height: 450px;
+    position: relative;
+    margin: 40px 45px;
+ 
+}
+
+.section__2 .item__group {
+    display: flex;
+    list-style: none;
+    font-size: 100px;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    
+}
+
+.section__2 .item__group li {
+    padding-top: 150px;
+ }
+
+ .item__group .fa-html5 {
+     color: rgba(245, 136, 11, 0.76);
+ }
+
+ .item__group .fa-css3-alt {
+    color: rgba(12, 158, 226, 0.959);
+}
+
+.item__group .fa-js {
+    color: rgba(250, 226, 8, 0.959);
+}
+
+.item__group .fa-react {
+    color: rgba(4, 151, 248, 0.75);
+}
+
+
+ /* section__2 card */
+.card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card .background__1 {
+    width: 500px;
+    height: 450px;
+    background-image: url("https://pbs.twimg.com/profile_images/1109389733912666112/XX55fTPf.jpg");
+    background-repeat: no-repeat;
+}
+
+.card .background__2 {
+    height: 100%;
+    background-image: url("https://neilpatel.com/wp-content/uploads/2016/10/youtube.png");
+}
+
+.card .background__3 {
+    background-image: url("https://trendw.kr/wp-content/uploads/2018/12/travel.jpg");
+    height: 450px;
+    background-size: cover;
+}
+
+
+ /* section 3 */
+.section__3 {
+    background-color: #000000;
+    width: 100vw;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.section__3 p {
+    padding: 60px 20px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+ /* FOOTER */
+.footer__1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    border-top: 1px solid;
+    padding: 25px 30px;
+}
+
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 680px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 35px;
+        z-index: 1;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .navbar__menu li {
+        display: none;
+    }
+
+    .navbar .navbar__menu li:hover {
+        background-color: rgba(73, 71, 71, 0.0); 
+    }
+
+    .navbar .navbar__icons {
+        justify-content: center;
+        width: 100%;
+        padding-top: 15px;
+        display: none;
+    }
+
+    .section__1 .main__page {
+        padding: 300px 30px;
+    }
+
+    .section__1 .main__page span {
+        text-align: center;
+        font-size: 80px;
+    }
+    .section__1 .main__page p {
+        font-size: 50px;
+    }
+
+
+
+
+    .section__2 .container {
+        padding-right: 10% 10%;
+        margin: 20px;
+    }
+
+    .card .background__1 {
+        background-size: 450px 450px;
+        width: 450px;
+        height: 450px;
+    }
+
+    .card .background__2 {
+        background-size: 450px 450px;
+        width: 450px;
+        height: 450px;
+    }
+
+    .section__2 .main__portfoilo ul {
+        background-size: 450px 450px;
+        width: 450px;
+        height: 450px;
+
+    }
+
+    .card .background__3 {
+        background-size: 450px 450px;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 450px;
+    }
+
+    .section__3 p {
+        text-align: center;
+        font-size: 20px;
+        padding-top: 100px;
+    }
+
+}
