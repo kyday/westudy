@@ -14,3 +14,11 @@ https://kyday.github.io/westudy/index.html
 
 # Westudy 2주차 - mini game
 ## javascript를 이용한 1to50 Game 만들기
+- arr
+- for
+- if
+- function
+- ES6
+- Event
+- let, const
+- date
