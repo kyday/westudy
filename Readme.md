@@ -12,4 +12,5 @@ https://kyday.github.io/westudy/index.html
 - slack
 
 
-# Westudy 2주차 - javascript mini game
+# Westudy 2주차 - mini game
+## javascript를 이용한 1to50 Game 만들기
